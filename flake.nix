@@ -7,6 +7,10 @@
         path = ./go;
         description = "Go";
       };
+      rust = {
+        path = ./rust;
+        description = "Rust";
+      };
     };
   };
 }
