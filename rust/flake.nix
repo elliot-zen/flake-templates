@@ -20,11 +20,14 @@
         pkgs = import nixpkgs {
           inherit system overlays;
         };
-      in rec {
+      in {
+        devShells.default = with pkgs;
+          mkShell {
             buildInputs = [
-              rust-bin.stable.latest.default
+              rust-bin.beta.latest.default
               rust-analyzer
             ];
+
             shellHook = ''
             '';
           };
