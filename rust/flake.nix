@@ -21,13 +21,9 @@
           inherit system overlays;
         };
       in rec {
-        devShells.default = with pkgs;
-          mkShell {
-            packages = [
+            buildInputs = [
               rust-bin.stable.latest.default
               rust-analyzer
-            ];
-            buildInputs = [
             ];
             shellHook = ''
             '';
