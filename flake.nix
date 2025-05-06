@@ -11,6 +11,14 @@
         path = ./rust;
         description = "Rust";
       };
+      python = {
+        path = ./python;
+        description = "Python";
+      };
+      node = {
+        path = ./node;
+        description = "NodeJS";
+      };
     };
   };
 }
