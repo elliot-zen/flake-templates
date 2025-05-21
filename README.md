@@ -9,7 +9,10 @@ nix registry add elliot-zen github:elliot-zen/flake-templates
 ## Use 
 ```sh 
 # go
-nix falke init -t elliot-zen#go
+nix flake init -t elliot-zen#go
+
+# or refresh
+nix flake init -t elliot-zen#go --refresh
 
  ```
 
